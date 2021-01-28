@@ -69,7 +69,7 @@ export const MacEdit = props => (
             <TextInput source="price" />
             <TextInput source="title" />
             <TextInput source="description" />
-            <ImageInput source="img"  accept="image/*" multiple={false} >
+            <ImageInput source="img"  accept="image/*" multiple >
                 <ImageField source="img" />
             </ImageInput>
         </SimpleForm>     
@@ -83,7 +83,7 @@ export const MacCreate = props => (
             <TextInput source="name" />
             <TextInput source="price" />
             <TextInput source="title" />
-            <TextInput multiline source="description" />
+            <TextInput multiline multiline source="description" />
             <ImageInput source="img" />
         </SimpleForm>
     </Create>
